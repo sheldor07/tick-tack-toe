@@ -48,7 +48,7 @@ export default class Game extends React.Component{
         const current = history[this.state.stepNumber]
         const squares = current.squares
         let status
-        const winner = calculateWinner(current.squares)
+        const winner = calculateWinner(squares)
 
         if(winner) {
         status = 'Winner is ' + winner
