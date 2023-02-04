@@ -2,10 +2,15 @@
 import './App.css';
 import React from 'react';
 import Game from './components/Game'
+import Footer from './components/Footer'
 class App extends React.Component{
   render(){
     return(
-      <Game/>
+      <div>
+        <Game/>
+        <Footer/>
+      </div>
+      
     )
   }
 }
